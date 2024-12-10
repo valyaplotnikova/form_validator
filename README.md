@@ -7,7 +7,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/valyaplotnikova/form_validator.git
    cd form_validator
    ```
 
@@ -26,14 +26,10 @@
    python manage.py runserver
    ```
 5. Использование   
-Отправьте POST запрос на http://127.0.0.1:8000/forms/get_form/ с данными формы в формате f_name1=value1&f_name2=value2.
+Перейдите на http://127.0.0.1:8000/get_form/ и отправтье данные в формате f_name1=value1&f_name2=value2.
 
-Пример запроса
-```bash
-curl -X POST -d "user_email=test@example.com&user_phone=+7 123 456 78 90&registration_date=01.01.2022" http://127.0.0.1:8000/forms/get_form/
-```
 Ответ   
-Если форма найдена, вы получите:
+Если форма найдена, вы получите ответ с названием формы:
 ```bash
 {"form_name": "User  Registration"}
 ```
@@ -44,4 +40,8 @@ curl -X POST -d "user_email=test@example.com&user_phone=+7 123 456 78 90&registr
     "user_phone": "phone",
     "registration_date": "date"
 }
+```
+6. Для запуска тестовых запросов нужно набрать в терминале:
+```bash
+python forms/test_scripts.py
 ```

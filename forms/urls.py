@@ -6,7 +6,7 @@ from .views import get_form, form_answer
 app_name = FormsConfig.name
 
 urlpatterns = [
-    path('get_form/', get_form, name='get_form'),
-    path('get_form/form_answer/', form_answer, name='form_answer'),
+    path('', get_form, name='get_form'),
+    path('form_answer/', form_answer, name='form_answer'),
 
 ]

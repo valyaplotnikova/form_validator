@@ -14,6 +14,7 @@ def get_form(request):
     return render(request, "index.html")
 
 
+@csrf_exempt
 def form_answer(request):
     form_data = get_request_data(request.POST.get('request'))
     templates = db.all()

@@ -1,0 +1,23 @@
+{
+    "_default": {
+        "1": {
+            "name": "User  Registration",
+            "user_email": "email",
+            "user_phone": "phone",
+            "registration_date": "date"
+        }
+    },
+    "2": {
+        "name": "Order Form",
+        "lead_email": "email",
+        "order_date": "date",
+        "customer_phone": "phone"
+    },
+    "3": {
+        "name": "Admin Registration",
+        "admin_email": "email",
+        "admin_phone": "phone",
+        "registration_date": "date",
+        "comment": "text"
+    }
+}

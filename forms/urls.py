@@ -1,11 +1,12 @@
 from django.urls import path
 
 from .apps import FormsConfig
-from .views import get_form
-
+from .views import get_form, form_answer
 
 app_name = FormsConfig.name
 
 urlpatterns = [
     path('get_form/', get_form, name='get_form'),
+    path('get_form/form_answer/', form_answer, name='form_answer'),
+
 ]
